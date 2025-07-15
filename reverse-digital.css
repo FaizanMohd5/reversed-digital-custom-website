@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    padding: 40px 100px;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+.nav .nav1 .logo{
+    width: 40px;
+    text-align:center;
+    background-color: black;
+    color: white;
+    transform: rotateZ(7deg) scaleX(-1);
+    border-radius: 10px;
+}
+.nav .nav1 sup{
+    width: 11px;
+    text-align: center;
+    font-size: 7px;
+    font-weight: 100;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.nav .nav2 h5{
+    height: 100%;
+    font-size: 20px;
+    font-weight: 100;
+}
+#title{
+    width: 60%;
+    margin-top: 100px;
+    font-size: 100px; 
+}
+#bio h5{
+    width: 55%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 60px 470px;
+}
+.image{
+    width: 100%;
+    height: 50pc;
+    background-image: url(https://reverseddigital.com/assets/7b2cb684-9775-01b4-a586-c1688bca4a29/bd3cbb05-c940-496a-b7c8-cb99ee5b5ba5/web%20apps%2002.png?fm=webp&fit=max&w=1536);
+    background-size: cover;
+    margin: 160px 0px;
+    border-radius: 30px;
+}
+.bio2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 0 300px;
+    letter-spacing: -1px;
+}
+.services-section {
+    margin: 180px 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.services-section h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.service-card {
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: #f7f7f7;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.service-card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+.tech-stack-section {
+    text-align: center;
+    margin: 180px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.tech-stack-section h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 40px;
+}
+
+.tech-item {
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover img {
+    transform: scale(1.2);
+}
+
+.tech-item p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.testimonials-section {
+    text-align: center;
+    margin: 180px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.testimonials-section h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.testimonial-card {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+}
+
+.testimonial-card h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #888;
+    font-weight: normal;
+}
+.about-section {
+    text-align: center;
+    margin: 180px auto;
+    width: 70%;
+    font-family: Helvetica, sans-serif;
+}
+
+.about-section h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.about-section p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #444;
+    font-weight: 100;
+}
+.team-section {
+    text-align: center;
+    margin: 160px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.team-section h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.team-card {
+    width: 200px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+}
+
+.team-card h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: gray;
+}
+
+#web-apps{
+    margin-top: 180px;
+    font-size: 50px;
+}
+
+
+.app-images{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.app-images .app1, .app2{
+    width: 100%;
+    height: 100%;
+}
+.app-images .app1 .app-img{
+    background-image: url(https://reverseddigital.com/assets/7b2cb684-9775-01b4-a586-c1688bca4a29/c09c0815-c8e2-40c5-9635-258a6f5b461e/vie%20-%20Case%20Small.jpg?fm=webp&fit=max&w=1500);
+}
+.app-images .app2 .app-img{
+    background-image: url(https://reverseddigital.com/assets/7b2cb684-9775-01b4-a586-c1688bca4a29/43bfdd61-8b6c-4d19-bea1-f1f01395fb83/Case%20Small.png?fm=webp&fit=max&w=1500);
+    margin-top: 100px;
+}
+.app-images .app1 .app-img, .app2 .app-img{
+    background-size: cover;
+    height: 650px;
+    width: 90%;
+    border-radius: 30px;
+    margin: 40px 0;
+}
+
+.app-name h3{
+    font-size: 30px;
+}
+.app-name h5{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-weight: 100;
+    line-height: 40px;
+}
+.cases-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 300px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 20px 60px;
+    display: inline-block;
+}
+.contact-footer {
+    font-family: Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    margin-top: 200px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.contact-section h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+
+.footer-bar {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
